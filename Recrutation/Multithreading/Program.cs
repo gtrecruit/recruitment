@@ -18,6 +18,7 @@ namespace Multithreading
 
             //TODO: start all stuff in new threads
             //Display should wait for calculate to calculate, and calculate needs to wait for preprocess to finish preprocessing
+            //(so basically except of parallel processing some sort of syncronization is required!)
             preproc.Start();
             calc.Start();
             display.Start();
