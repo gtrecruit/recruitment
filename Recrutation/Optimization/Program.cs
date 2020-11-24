@@ -34,13 +34,13 @@ namespace Optimization
 
         private static void Calculate()
         {
-            var r = new Random();
             for (int i = 0; i < 5000; i++)
             {
                 List<int> results = new List<int>();
 
                 foreach (var d in datas)
                 {
+                    var r = new Random();
                     results.Add(d.Calculate(r.Next(1000)));
                 }
 
